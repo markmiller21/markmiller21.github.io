@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+  <title>JS vs Ruby</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../mark-miller-blog.css">
+</head>
+<body>
+  <div id="banner">
+    <img src="IMG_0021.jpg" height="100px" width="100%">
+  </div>
+  <div id="nav">
+    <div id="nav_wrapper">
+      <ul>
+          <li><a href="http://markmiller21.github.io/index.html">Home</a></li><li>
+          <a href="http://markmiller21.github.io/blog/index.html">Blog</a></li><li>
+          <a href="#">Web Portfolio <img src="small-arrow.png" /></a>
+            <ul>
+              <li><a href="#">Example 1</a></li>
+              <li><a href="#">Example 2</a></li>
+              <li><a href="#">Example 3</a></li>
+            </ul>
+          </li><li>
+          <a href="#">Finance Portfolio <img src="small-arrow.png" /></a>
+            <ul>
+              <li><a href="http://www.docdroid.net/file/view/136u0/miller-senior-thesis.pdf">Senior Thesis</a></li>
+              <li><a href="http://www.docdroid.net/file/view/136u7/amazon-pitch.pdf">Amazon Pitch</a></li>
+              <li><a href="#">Sample DCF</a></li>
+            </ul>
+          </li><li>
+          <a href="#">Contact Me<img src="small-arrow.png" /></a>
+            <ul>
+              <li><a href="mailto:mark.kilpatrick.miller@gmail.com">Email Me</a></li>
+              <li><a href="https://twitter.com/markmiller14">Twitter</a></li>
+              <li><a href="https://github.com/markmiller21">Github</a></li>
+            </ul>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+<main>
+  <h1>Exploring JavaScript vs Ruby</h1>
+  <h4>7/10/15</h4>
+
+  <section>
+    <h4> I'm assuming that all of you guys are familar with the basics of both Ruby and Javascript. These languages can be used in a very similar fashion.  One of the most important aspects of coding (in any language) is the use of key and value pair to store, access, and compute data.  In Ruby this is done threw hashes, while in Javascript this is done threw objects.  The following post will go into the syntax of both languages and compare how they similar and different </h4>
+
+    <h2> What are JS objects? </h2>
+    <p> Objects are simply variables that stored in a key/ value manner.  To get the value of the object you "call" the key.  If you confused, checkout this brief example of basic JS syntax below, </p>
+    <code>
+      var x = {
+      a: 1,
+      b: 2,
+      c: 3
+    };
+    </code>
+    <p> The code above simply created an object "x" that stores 3 key/ value pairs.  To you can access the value of each of these pairs a number of ways.
+    </p>
+    <code>
+      console.log(x.a); # print "1" to the screen
+      console.log(x['b']); # print "2" to the screen
+    </code>
+    <p> although both of these methods of accessing the value are valid, the more common approach is the object literal one (x.a). </p>
+    <p> If you want to delete a pair in this object, you should do the following</p>
+    <code> delete x.c; </code>
+    <p> The code above will delete the c key and value from this object and can thus no longer be accessed</p>
+
+    <h2>What are Ruby hashes?</h2>
+    <p>On a basic level ruby Hashes and JS objects serve the same purpose, to store key/ value pairs for accessing data, but their syntax is different.  Below I will be doing the same example above, just in Ruby as opposed to JS.</p>
+    <code>
+      x = {}
+      x['a'] = 1
+      x['b'] = 2
+      x['c'] = 3
+    </code>
+    <p>To access these values you must use the second way we used to access the value in JS </p>
+    <code>
+      puts x["a"] # print "1" to the screen
+      puts x["b"] # print "2" to the screen
+      puts x["c"] # print "3" to the screen
+    </code>
+    <p> To delete objects you have to call a method on the hash.  See the following for further clarification </p>
+    <code>
+      x.delete("c")
+    </code>
+    <h2> Differences between JS and Ruby </h2>
+    <p>Outside of the basic syntax it is hard to see how these two differ.  To me, the Javascript Object stored system seems much more intiutive than the ruby's hashes.</p>
+  </section>
+
+</main>
+</body>
+
+
+
+
+
+
