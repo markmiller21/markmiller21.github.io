@@ -81,7 +81,6 @@ body {
 
 
 /* body */
-
 .bodyItem {
   width: 11.25%;
   height: 25px;
@@ -163,9 +162,16 @@ body {
 /* Blog code */
 
 code {
+  margin-left: 10px;
   background-color: #A9BACC;
   font-family: Garamond;
   padding: 1px;
   white-space: pre-wrap;
   display: inline-block;
+}
+
+.answers {
+  margin-left: 10px;
+  padding-left: 5px;
+  border-left: 5px solid #BDBBBF;
 }
