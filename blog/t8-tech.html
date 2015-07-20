@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+  <title>Computer Memory</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../mark-miller-blog.css">
+</head>
+<body>
+  <div id="banner">
+    <img src="IMG_0021.jpg" height="100px" width="100%">
+  </div>
+  <div id="nav">
+    <div id="nav_wrapper">
+      <ul>
+          <li><a href="http://markmiller21.github.io/index.html">Home</a></li><li>
+          <a href="http://markmiller21.github.io/blog/index.html">Blog</a></li><li>
+          <a href="#">Web Portfolio <img src="small-arrow.png" /></a>
+            <ul>
+              <li><a href="#">Example 1</a></li>
+              <li><a href="#">Example 2</a></li>
+              <li><a href="#">Example 3</a></li>
+            </ul>
+          </li><li>
+          <a href="#">Finance Portfolio <img src="small-arrow.png" /></a>
+            <ul>
+              <li><a href="http://www.docdroid.net/file/view/136u0/miller-senior-thesis.pdf">Senior Thesis</a></li>
+              <li><a href="http://www.docdroid.net/file/view/136u7/amazon-pitch.pdf">Amazon Pitch</a></li>
+              <li><a href="#">Sample DCF</a></li>
+            </ul>
+          </li><li>
+          <a href="#">Contact Me<img src="small-arrow.png" /></a>
+            <ul>
+              <li><a href="mailto:mark.kilpatrick.miller@gmail.com">Email Me</a></li>
+              <li><a href="https://twitter.com/markmiller14">Twitter</a></li>
+              <li><a href="https://github.com/markmiller21">Github</a></li>
+            </ul>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+<main>
+  <h1>Exploring Computer Memory</h1>
+  <h4>7/20/15</h4>
+
+  <section>
+  <h3>Binary</h3>
+  <p>
+    Computers store all instructions as a string of numbers.  These numbers are all bits which is a binary operator that could be either 0 or 1 (think of it as a light switch, either on or off).  Anything can expressed threw a series of these bits.  Bits are general stored in a series of 8 and are referred to as a byte of data.  A byte can represent any number between 2^0 & 2^8 or 0-255 in numeric terms.  For example, the byte
+  </p>
+  <code>
+    00001101 # 13
+    1*2^3 + 1*2^2 + 0*2^1 + 1*2^0 = 1*8 + 1*4 + 0*2 + 1*1 = 8+4+1 = 13
+  </code>
+
+  <h3>Hexadecimal</h3>
+  <p>
+    Storing all data as a value in between 0 and 255 is not very efficient on a large scale.  Developers create a hexidecimal system in an attempt to be able to store more data in the same amount of memory.  Hexadecimal stores information by splitting each byte into two nibbles, which are four bits.  Each nibble corresponds to one of 16 combinations which represent one of the entries in the following array
+  </p>
+  <code>
+    nibble = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F]
+  </code>
+
+  <h3>How are bits stored?</h3>
+  <p>
+    Computer memory has come a long way in the last 50 years.  Back in 1962 each bit of data was stored as positive or negative magnetic coil that could be read by the machine. These magnetic coils were about the size of your thumb nail.  Thousands of these would be used to store a single sentence.
+  </p>
+  <p>
+    Bits moved on to be stored in thin film magnetic disk (like your favorite CD back in the 90s).  These disks had millions of programable magnetic cells that could be either positive or negative.
+  </p>
+  <p>
+    Current research is showing that we will soon be able to store a single bit on a single atom.  For example, a word like “THINK” could be stored in 5 bytes of data which is 480 atoms
+  </p>
+  <p>
+    IBM estimates we could put a quadrillion bits in a object the size of your typical iPod with atomic storage.  To add some context, we would be able to store the information represented in a 2500 km long books shelf in the palm of your hand.  These storage devices haven’t hit market yet but research shows this should be possible within our life-time, but most likely within 10-20 yearrs
+  </p>
+  <h3>Storing my name in binary</h3>
+  <p>
+    For example, this is how my name (Mark Miller) would be stored in the computer.  The first line is my name with brackets separating the letters.  The second line is the numeric representation of the letter in number form.  The third line is converted to hexadecimal form. And the fourth line is how a computer would see my name.  It is the numeric representation of each letter in binary form.
+  </p>
+  <code>
+  Mark Miller
+  |M|A|R|K| |M|I|L|L|E|R|
+  |77|97|114|107|31|77|105|108|101|114|13|
+  |4D|61|72|6B|20|4D|69|6C|6C|65|72|0D|
+  |01001101|01100001|01110010|01101011|00100000|01001101|01101001|01101100|01101100|01100101|01110010|00001101|
+  </code>
+  </section>
+
+</main>
+</body>
+
+
+
+
+
+
