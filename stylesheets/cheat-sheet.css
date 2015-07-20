@@ -1,0 +1,74 @@
+main {
+  position:relative.;
+}
+
+.column-one {
+    width: 50%;
+    float: left;
+}
+
+.column-two {
+    width: 50%;
+    float: right;
+}
+
+.title {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.positioning {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.boxed-up {
+  border: 1px solid black;
+  border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.content-alignment {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.units {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.useage {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.centering {
+  border: 1px solid black;
+  border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.outer {
+    position: relative;
+    height:1100px;
+}
+
+.copywright {
+  position:absolute;
+    text-align:center;
+    width:100%;
+    bottom:0;
+}

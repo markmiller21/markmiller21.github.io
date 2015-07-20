@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+  <title>CSS-Positioning CheatSheet</title>
+  <meta charset="UTF-8">
+
+  <link type="text/css" rel="stylesheet" href="../stylesheets/cheat-sheet.css">
+  <!-- <link rel="shortcut icon" href="../imgs/tab-icon.ico"> -->
+</head>
+
+<body>
+
+<main>
+
+<div class="outer">
+
+<div class="column-one">
+<div class="title">
+    <h1>&lt;div&gt;CSS Positioning&lt;/div&gt;</h1>
+    <h2>Elements: Attributes</h2>
+</div>
+
+
+
+<div class="positioning">
+    <section >
+       <h3>display: inline, block, inline-block;</h3>
+       <p>Inline is default, block works like the &lt;p&gt; tag, it creates vertically arranged chunks,
+       inline-block puts multiple chunks on the same line.</p>
+    </section>
+
+    <section>
+       <h3>position: static, fixed, relative, absolute;</h3>
+       <p>static: default (it doesn't do anything, objects display in order).</p>
+       <p>fixed: displays objects relative to the browser window and provides immunity to scrolling.</p>
+        <p>relative: use left, right, top, bottom (see below) to push/pull elements without
+            removing them from the flow of the page</p>
+        <p>absolute: use left, right, top, bottom (see below) to position elements in relation
+            to their parent element. Removes element from the flow of the page.</p>
+        <p>Bonus: If you assign position: relative to a container, you may then use position: absolute
+            on objects within the container.</p>
+        <p>For further differentiation between Relative and Absolute Positioning watch
+            <a href="http://bit.ly/1GqDFwS">this video</a>.</p>
+    </section>
+
+    <section>
+       <h3>left; right; top; bottom;</h3>
+       <p>These elements accept numbers that represent how far away an object will be from the named element.
+       For example, left: 0; indicates a position aligned with the left (of the parent element),
+       and left: 20px; would align the element 20 px from the left (of the parent element).</p>
+    </section>
+
+    <section>
+       <h3>float: left, right; Clear: left, right, both;</h3>
+       <p>Clear specifies on which side of the element floating elements are not allowed to float.
+           For example, clear: right; would prohibit any floating elements to the right of the current element.</p>
+       <p>Float </p>
+    </section>
+</div>
+
+<div class="content-alignment">
+    <h3>Content Alignment</h3>
+    <p>text-align: left, right, center;</p>
+    <p>Note: vertical-align only works on table cells, i.e. &lt;td&gt; tags.</p>
+</div>
+
+</div>
+
+<div class="column-two">
+
+<div class="boxed-up">
+    <h3>Margin, Border, and Padding</h3>
+    <img src="../imgs/box-model.png">
+</div>
+
+<div class="useage">
+    <h3>How-To Guide</h3>
+    <ol>
+        <li>Make wireframe.</li>
+        <li>Give elements a background-color.</li>
+        <li>Use DevTools / trial-and-error to position elements.</li>
+        <li>Add inner elements, one layer at a time.</li>
+        <li>Repeat steps #2-4 until you run out of elements.</li>
+    </ol>
+</div>
+
+<div class="centering">
+    <h3>The Art of Centering</h3>
+    <p>Use these CSS settings to center an &lt;img&gt; or a &lt;div&gt;:</p>
+    <p>display: block;</p>
+    <p>width: nonzero (not 100%);</p>
+    <p>margin: auto; OR margin: 0 auto OR</p>
+    <p>margin-left: auto; margin-right: auto;</p>
+</div>
+
+
+
+<div class="units">
+    <h3>Pixels (px) vs. Relative-to-element (em) vs. Percentage (%)</h3>
+    <p>Pixels will make an element a fixed size relative to pixels on the screen. for example 'width: 50px;' would make the element 50 pixels wide.</p>
+    <p>em will set the element relative to the current size of the element.  For example, .5em means half the size of the current font.</p>
+    <p>Percentage will set the element as a percentage of the current size of the browser.  For example, 'width: 50%;' will make the element half the size of the parent element or the browswer</p>
+</div>
+
+</div>
+
+<p class="copywright">Created By Mark &amp; Kelly</p>
+
+</div>
+
+<footer>
+
+</footer>
+
+</main>
+
+</body>
+
+</html>
