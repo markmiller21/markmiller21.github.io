@@ -1,5 +1,6 @@
 html {
   background-color: #D8D8D8;
+  display: block;
 }
 
 body {
@@ -8,6 +9,10 @@ body {
   overflow-y: scroll;
   font-family: Garamond;
   font-size: 16px;
+}
+
+main {
+  margin: 10%;
 }
 
 
@@ -174,4 +179,72 @@ code {
   margin-left: 10px;
   padding-left: 5px;
   border-left: 5px solid #BDBBBF;
+}
+
+.blog-header {
+  margin: 10px;
+  padding: 0px;
+  /*border: 5px solid blue;*/
+}
+
+.blog-header-left {
+  margin: 0px;
+  /*border: 5px solid green;*/
+  display: inline-block;
+  width: 10%;
+}
+
+.blog-header-middle {
+  /*border: 5px solid yellow;*/
+  display: inline-block;
+  width: 70%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.blog-header-right {
+  /*border: 5px solid red;*/
+  display: inline-block;
+  width: 10%;
+}
+
+.blog-body {
+  padding: 2px;
+  /*border: 5px solid blue;*/
+  background-color: #E0E0E0;
+  margin: 0px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.tag-master {
+  margin-left: 5px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0px;
+
+}
+
+.tag-block {
+  background-color: #000033;
+  display: inline-block;
+  width: 15%;
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  border-radius: 20px;
+}
+
+.blog-body a {
+  margin: 0;
+  font-style: cursive;
+}
+
+.blog-body p {
+  margin: 0;
+  margin-left: 10px;
+  font-style: cursive;
 }
