@@ -1,84 +1,622 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <title>Mark Miller's Website </title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="mark-miller-blog.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Mark Miller's Portfolio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
-<body>
-  <div id="banner">
-    <img src="IMG_0021.jpg" height="100px" width="100%">
-  </div>
+<body id="page-top" class="index">
 
-<div id="nav">
-  <div id="nav_wrapper">
-    <ul>
-        <li><a href="http://markmiller21.github.io/index.html">Home</a></li><li>
-        <a href="http://markmiller21.github.io/blog/index.html">Blog</a></li><li>
-        <a href="#">Web Portfolio <img src="small-arrow.png" /></a>
-          <ul>
-            <li><a href="http://markmiller21.github.io/projects/css-positioning-cheatsheet.html">CSS-Positioning CheatSheet</a></li>
-            <li><a href="#">Example 2</a></li>
-            <li><a href="#">Example 3</a></li>
-          </ul>
-        </li><li>
-        <a href="#">Finance Portfolio <img src="small-arrow.png" /></a>
-          <ul>
-            <li><a href="http://www.docdroid.net/file/view/136u0/miller-senior-thesis.pdf">Senior Thesis</a></li>
-            <li><a href="http://www.docdroid.net/file/view/136u7/amazon-pitch.pdf">Amazon Pitch</a></li>
-            <li><a href="#">Sample DCF</a></li>
-          </ul>
-        </li><li>
-        <a href="#">Contact Me<img src="small-arrow.png" /></a>
-          <ul>
-            <li><a href="mailto:mark.kilpatrick.miller@gmail.com">Email Me</a></li>
-            <li><a href="https://twitter.com/markmiller14">Twitter</a></li>
-            <li><a href="https://github.com/markmiller21">Github</a></li>
-          </ul>
-        </li>
-    </ul>
-  </div>
-</div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Mark Miller</a>
+            </div>
 
-<section class ="left-column">
-  <img src="tomorrowworld.png" alt="Picture of Mark Miller"/>
-</section>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Web Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-<section class ="middle-column">
-  <div class="currentBody">
-    <h3><a href="#">Brief Introduction</a></h3>
-      <p>My name is Mark Miller and I am an aspring coder.  I recently graduated from James Madison University and currently am working remotely as a student at Dev Bootcamp.  I will be moving up to NYC on July 24th to start the onsite poriton of DBC.  This is a preview of my website/ blog.  Feel free to click around and give me any suggestions about how I could improve it the site and what I could add.  Below is a little bit more about me if you're interested. </p>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome To My Website</div>
+                <div class="intro-heading">Feel Free To Click Around</div>
+                <a href="#portfolio" class="page-scroll btn btn-xl">Show me</a>
+            </div>
+        </div>
+    </header>
 
-    <h3><a href="https://www.jmu.edu/academics/undergraduate/majors/Quantitative%20Finance.shtml">James Madison University</a></h3>
-      <p>I recently graduated from James Madison University where I majored in Quantitative Finace with minors in Economics and Mathematics.  Links for some of my more notable work at JMU are located in the Finance Portfolio & Other Projects tabs. </p>
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Web Portfolio</h2>
+                    <h3 class="section-subheading text-muted">Some of my most recent projects</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/fitfriender-fullscreen-screenshot.jpeg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Fit Friender</h4>
+                        <p class="text-muted">Project Manager</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/empower.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>EMpower</h4>
+                        <p class="text-muted">Website Designer</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/shaq-over-flow.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Shaq Overflow</h4>
+                        <p class="text-muted">Project Lead</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/simpsons-racer.jpeg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Simpson's Racer</h4>
+                        <p class="text-muted">Website Designer</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/reach.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Reach</h4>
+                        <p class="text-muted">Front-end Developer</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>TBD</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h3><a href="https://sites.google.com/site/jmumif2/home">Madison Investment Fund</a></h3>
-      <p>Outside of my studies I spent the majority of my time doing research and work for the Madison Investment Fund (MIF). MIF is a student led investment fund that manages a portion of JMU's endownment in the stock market.  I was the Portfolio Manager of the Technology Sector my senior year, while holding a number of roles throughout the rest of my collegiate career.  As the manager of the Technology Sector I decided to pitch Amazon Corp (AMZN) to the fund in the Spring of 2015.  A copy of this pitch can be found in the Finance Portfolio tab. </p>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Brief Overview</h2>
+                    <h3 class="section-subheading text-muted">Just a quick synposis of my background</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/jmu.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">James Madison University</h4>
+                                    <h6>September 2012 - May 2015</h6>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">I recently graduated from <a href="https://www.jmu.edu/academics/undergraduate/majors/Quantitative%20Finance.shtml">James Madison University</a> where I majored in <a href="https://www.jmu.edu/academics/undergraduate/majors/Quantitative%20Finance.shtml"> Quantitative Finance</a> with minors in Economics and Mathematics.  Links for some of my more notable work at JMU are located in the Financial Projects section.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/park-place.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">Bozzuto Group</h4>
+                                    <h6>Summer 2012</h6>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">I worked as a Sales and Marketing Associate for the summer.  I leased <a href="http://www.bozzuto.com/apartments/communities/67-park-place-at-petworth-metro">apartments</a> and helped managed over 200 residents.  While leasing apartments I helped build a more accurate apartment pricing model that lead to a 12% increase in revenue.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/mif-logo.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">Madison Investment Fund</h4>
+                                    <h6>October 2012 - May 2015</h6>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Portfolio Manager of the Technology Sector in a <a href="https://beinvolved.jmu.edu/organization/mif">student-led investment fund</a> responsible for managing a $220,000 large-cap equity portfolio for the JMU Foundation's endowment, which had a 2013 unadjusted return of 28.3%.  Succesfully pitched <a href="http://www.docdroid.net/136u7/amazon-pitch.pdf.html">Amazon</a> based on value investing principles</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/kerburn-rose.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">Kerburn Rose</h4>
+                                    <h6>Summer 2013</h6>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Worked as an <a href="http://www.kerburn.co.uk/">Investment Banking Summer Analyst</a> in the M&A Advisory Group.  Built full-scale financial models and pitch books to potential clients with possible acquisition targets.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/hff.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">Holiday Fenoglio Fowler "HFF"</h4>
+                                    <h6>Summer 2014</h6>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Worked as a Debt & Equity Analyst in Dallas, Texas at the <a href="https://www.hfflp.com/">largest Commercial Real Estate Intermediary</a>.  Performed market and financial analysis for commercial real estate properties in the following sectors: multifamily, industrial, office, senior housing, and retail.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/dbc-logo.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">Dev Bootcamp</h4>
+                                    <h6>May 2015 - October 2015</h6>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted"><a href="http://devbootcamp.com/">Dev Bootcamp</a> is a 24-week instensive program designed to train full-stack web developers from fundamentals to advanced topics. 12 weeks were spent doing part-time self study with guidance from an instructor, followed by an additional 12 weeks of full time learning on-site in NYC.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Be Part
+                                    <br>Of My
+                                    <br>Story!</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h3><a href="https://www.linkedin.com/pub/mark-miller/32/754/3b6">Work Experience</a></h3>
-      <p>Throughout college I worked a number of internships and jobs, such as,</p>
-      <ul>
-        <li class="experience">Debt & Equity Intern with
-          <a href="https://www.hfflp.com/">HFF Securities</a>
-        </li><br>
-        <li class="experience">Investment Banking Summer Analyst with
-          <a href="http://www.kerburn.co.uk/Private_Equity_Venture_Capital.asp">Kerburn Rose </a>
-        </li><br>
-        <li class="experience">Summer Analyst with
-          <a href="http://http://www.phillipsrealtycapital.com/">Phillips Realty Capital</a>
-        </li><br>
-        <li class="experience">Sales and Marketing Associate with
-          <a href="http://www.bozzuto.com/">The Bozzuto Group</a>
-        </li><br>
-        <li class="experience">Advanced Field Sales Advisor wtih
-          <a href="http://cutco.com/">Vector Marketing Corporation</a>
-        </li>
-      </ul>
-      <p>If you'd like to read more about my experiences please click the Work Experience link to redirect you to my linkedin page</p>
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About me</h2>
+                    <h3 class="section-subheading text-muted">Web Developer, Financial Analyst, and basketball junkie</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Mark Miller</h4>
+                        <p class="text-muted">Full-Stack Developer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">I am an analytical and creative quantitative finance graduate turned full stack developer who enjoys building meaningful, well-designed products. As a leader, I always keep the big picture in mind to deliver innovative and well-tested products. I thrive while working within an agile team where I am being pushed to my limits and face the constant challenge of learning and implementing new technologies. <br><br>
+                    I am currently pursuing full-stack junior developer jobs in the Washington D.C. area </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Me</h2>
+                    <h3 class="section-subheading text-muted">Please reach out if you need a developer</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h3>Contact Me</h3>
-      <p>If you like this webpage and want to see more of my work checkout my <a href="https://github.com/markmiller21">Github Page</a> and <a href="https://twitter.com/markmiller14">Twitter Account</a></p>
-  </div>
-</section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Mark Miller's Blog 2015</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://www.linkedin.com/pub/mark-miller/32/754/3b6"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="https://github.com/markmiller21"><i class="fa fa-github"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/markmiller14"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/mark.kilpatrick.miller"><i class="fa fa-facebook"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Fit Friender</h2>
+                            <p class="item-intro text-muted">Like tinder but for workout partners</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/fitfriender-fullscreen-screenshot-preview.jpeg" alt="">
+                            <p><a href="http://fitfriender.herokuapp.com/">FitFriender</a> is an app that connects users with their ideal workout partner based on workout activities (ie lifting, cycling, tennis) location, and gender preference. Users swipe through potential matches. If both users ‘like’ each other they are able to converse via a message terminal to setup a workout. </p>
+                            <p>
+                            <ul class="list-inline">
+                                <li>GitHub: <a href="https://github.com/nyc-cicadas-2015/workout-with-me">Source</a></li>
+                                <li>Date: October 2015</li>
+                                <li>Website: <a href="http://fitfriender.herokuapp.com/">Fit Friender</a></li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>EMpower</h2>
+                            <p class="item-intro text-muted">Basic responsive website for a fin-tech startup called EMpower</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/empower-preview.png" alt="">
+                            <p><a href="#">EMpower</a> is an NYC based fin-tech startup.  They are a development platform that partners with local organizations to build physical and energy infrastructure in emerging markets. EMpower provides the highest standards of diligence, deal execution, and financing for infrastructure projects. In cooperation with its partners, EMpower identifies, develops, and markets infrastructure projects to sophisticated buyers in the US and Europe.</p>
+                            <ul class="list-inline">
+                                <li>GitHub: <a href="https://github.com/markmiller21/EMpower">Source</a></li>
+                                <li>Date: November 2015</li>
+                                <li>Website: <a href="http://empowerenergy.herokuapp.com/">Fit Friender</a></li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Shaq OverFlow</h2>
+                            <p class="item-intro text-muted">Badic responsive website for a fin-tech startup called EMpower</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/shaq-over-flow-preview.png" alt="">
+                            <p><a href="http://shaq-over-flow.herokuapp.com/">Shaq OverFlow</a> is a clone of the popular site Stack Overflow but with a Shaquille O'Neal theme. Registered users are able to submit programming questions, answer other users questions, and vote on the relevance of every question and answer.</p>
+                            <ul class="list-inline">
+                                <li>GitHub: <a href="https://github.com/markmiller21/shaq-overflow">Source</a></li>
+                                <li>Date: October 2015</li>
+                                <li>Website: <a href="http://shaq-over-flow.herokuapp.com/">Shaq OverFlow</a></li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Simpsons Racer</h2>
+                            <p class="item-intro text-muted">Javascript racing game featuring Homer and Duffman</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/simpsons-racer-preview.jpeg" alt="">
+                            <p><a href="http://mark-simpsons-racer.info/">Simpsons Racer</a> is simple racing game built qith HTML, CSS, JQuery, and Javascript.  To move Homer and Duffman press the "Q" key and "P" key respectively.  The winner will be determined and alerted when they reach the end of the screen</p>
+                            <ul class="list-inline">
+                                <li>GitHub: <a href="https://github.com/markmiller21/simpsons-racer">Source</a></li>
+                                <li>Date: August 2015</li>
+                                <li>Website: <a href="http://mark-simpsons-racer.info/">Simpsons Racer</a></li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Simpsons Racer</h2>
+                            <p class="item-intro text-muted">Meta social media app to help cross posting</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/reach-preview.png" alt="">
+                            <p><a href="https://reachdashboard.com">Reach Dashboard</a> is a meta social media site that allows users to post across all their social media sites.  Users can set up regular blasts or one-time posts.</p>
+                            <ul class="list-inline">
+                                <li>GitHub: <a href="#">Source</a></li>
+                                <li>Date: November 2015</li>
+                                <li>Website: <a href="https://reachdashboard.com">Reach Dashboard</a></li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>TBD</h2>
+                            <p class="item-intro text-muted">Description goes here</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
+                            <p><a href="#">TBD</a> Longer Description here</p>
+                            <ul class="list-inline">
+                                <li>GitHub: <a href="#">Source</a></li>
+                                <li>Date: November 2015</li>
+                                <li>Website: <a href="#">TBD</a></li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
 </body>
+
 </html>

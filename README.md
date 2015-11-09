@@ -1,2 +1,1 @@
-# markmiller21.github.io
-My DBC Phase 0 github pages site!
+This is a Bootstrap version of my blog.  This blog serves as an online portfolio of my coding and finance experience to date.  If you'd like to check please visit markmiller21.github.io
