@@ -1,0 +1,1 @@
+This is my personal blog, software development and data science portfolio.  This blog serves as an online portfolio of my coding and finance experience to date.  If you'd like to check please visit markmiller21.github.io
